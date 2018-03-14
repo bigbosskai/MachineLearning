@@ -48,7 +48,7 @@ if __name__ == "__main__":
     t1=np.linspace(x1_min,x1_max,M)
     t2=np.linspace(x2_min,x2_max,N)
     x1,x2=np.meshgrid(t1,t2)
-    x_show=np.s((x1.flat,x2.flat),axis=1)
+    x_show=np.stack((x1.flat,x2.flat),axis=1)
     # print(x_show.shape)
     print(x1)
     print(x2)
